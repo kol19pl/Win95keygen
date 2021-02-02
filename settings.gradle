@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Win 95 key gen"

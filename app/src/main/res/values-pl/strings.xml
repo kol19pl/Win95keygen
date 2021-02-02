@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Win 95 key gen</string>
+    <string name="generuj_klucz_oem">GENERUJ KLUCZ OEM</string>
+    <string name="generuj_klucz">Generuj Klucz</string>
+    <string name="spraw_klucz">Sprawdź klucz</string>
+    <string name="wprowa_klucz">wprowadź klucz</string>
+    <string name="ok">Ok</string>
+    <string name="Klucz_Poprawny">Klucz Poprawny.</string>
+    <string name="Klucz_bledny">Klucz błędny.</string>
+    <string name="Kluczjestzakrutki">Klucz jest za krótki.</string>
+    <string name="Wynik">Wynik</string>
+    <string name="KluczOEMPoprawny">Klucz OEM Poprawny.</string>
+    <string name="Kluczjestzadługi">Klucz jest za długi.</string>
+    <string name="Nastompiłnieprzewidzianybłąd">Nastąpił nieprzewidziany błąd</string>
+</resources>

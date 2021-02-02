@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Win 95 key gen</string>
+    <string name="xxxxx_oem_xxxxxxx_xxxxx" translatable="false">XXXXX-OEM-XXXXXXX-XXXXX</string>
+    <string name="generuj_klucz_oem">GENERUJ KLUCZ OEM</string>
+    <string name="generuj_klucz">Generuj Klucz</string>
+    <string name="xxx_xxxxxxx" translatable="false">XXX-XXXXXXX</string>
+    <string name="spraw_klucz">Sprawć klucz</string>
+    <string name="wprowa_klucz">wprować klucz</string>
+    <string name="ok">OK</string>
+    <string name="Klucz_Poprawny">Klucz Poprawny</string>
+    <string name="Klucz_bledny">Klucz błędny</string>
+    <string name="Kluczjestzakrutki"> Klucz jest za krótki</string>
+    <string name="Wynik">"Wynik"</string>
+    <string name="KluczOEMPoprawny">"Klucz OEM Poprawny"</string>
+    <string name="Kluczjestzadługi">"Klucz jest za długi"</string>
+    <string name="Nastompiłnieprzewidzianybłąd">" Nastompił nie przewidziany błąd"</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <!-- -
+    This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+    For more information, see https://support.google.com/admob/answer/3052638
+<!- -->
+    <string name="banner_ad_unit_id" translatable="false">YOUR_BANNER_AD_UNIT_ID</string>
+
+
+</resources>
