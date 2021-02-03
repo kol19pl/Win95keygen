@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Win 95 key gen</string>
+    <string name="generuj_klucz_oem">生成OEM密钥</string>
+    <string name="generuj_klucz">产生金钥</string>
+    <string name="spraw_klucz">检查钥匙</string>
+    <string name="wprowa_klucz">输入密码</string>
+    <string name="ok">行</string>
+    <string name="Klucz_Poprawny">正确密钥</string>
+    <string name="Klucz_bledny">按键错误</string>
+    <string name="Kluczjestzakrutki">钥匙太短</string>
+    <string name="Wynik">结果</string>
+    <string name="KluczOEMPoprawny">OEM密钥正确</string>
+    <string name="Kluczjestzadługi">钥匙太长</string>
+    <string name="Nastompiłnieprzewidzianybłąd">发生意外错误</string>
+</resources>
