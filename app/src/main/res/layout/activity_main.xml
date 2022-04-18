@@ -13,7 +13,6 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="64dp"
-        android:onClick="GenerujKlucz"
         android:text="@string/generuj_klucz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -50,13 +49,12 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonGenerujKlucz" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonGenerujKluczoem"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="64dp"
-        android:onClick="GenerujKluczOEM"
         android:text="@string/generuj_klucz_oem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,6 +69,7 @@
         android:cursorVisible="true"
         android:ems="10"
         android:enabled="true"
+        android:focusable="true"
         android:hint="@string/wprowa_klucz"
         android:inputType="numberSigned"
         android:singleLine="true"
@@ -80,7 +79,7 @@
         app:layout_constraintStart_toStartOf="@+id/buttonSprawćKlucz"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.07999998"
-        android:focusable="true" />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/buttonSprawćKlucz"
@@ -88,11 +87,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
-        android:onClick="Sprawc"
         android:text="@string/spraw_klucz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <FrameLayout
         android:id="@+id/AdmbFrame"

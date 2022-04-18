@@ -3,13 +3,7 @@ package com.koltech.win95keygen;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.res.ResourcesCompat;
 
-import android.app.Dialog;
-import android.content.DialogInterface;
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
@@ -36,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
     private AdView adView;
     private FrameLayout adContainerView;
     private static final String AD_UNIT_ID = "ca-app-pub-4834003578511022/9181878928";
+    public Button sprawcklucz;
+    public Button generójklucz;
+    public Button generujkluczoem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +53,32 @@ public class MainActivity extends AppCompatActivity {
         adContainerView.addView(adView);
         loadBanner();
 
+        generójklucz=findViewById(R.id.buttonGenerujKlucz);
+        generujkluczoem=findViewById(R.id.buttonGenerujKluczoem);
+        sprawcklucz=findViewById(R.id.buttonSprawćKlucz);
+
+
+        generójklucz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GenerujKlucz();
+            }
+        });
+
+        generujkluczoem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GenerujKluczOEM();
+            }
+        });
+
+
+        sprawcklucz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Sprawc(view);
+            }
+        });
 
     }
 
@@ -82,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
     // Drawable drawable = ResourcesCompat.getDrawable(res, R.drawable.), null);
 
 
-   public void GenerujKlucz(View v){
+   public void GenerujKlucz(){
        TextView klucz1 = findViewById(R.id.textViewKlucz1);
 
        KeyGen keyGen = new KeyGen();
@@ -95,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
        klucz1.setText(EX);
     }
 
-    public void GenerujKluczOEM(View v){
+    public void GenerujKluczOEM(){
         TextView klucz1 = findViewById(R.id.textViewOEM1);
 
         KeyGen keyGen = new KeyGen();
@@ -169,9 +192,7 @@ public class MainActivity extends AppCompatActivity {
         // to get test ads on a physical device, e.g.,
         // "Use AdRequest.Builder.addTestDevice("ABCDE0123") to get test ads on this
         // device."
-        AdRequest adRequest =
-                new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                        .build();
+        AdRequest adRequest = new AdRequest.Builder().build();
 
         AdSize adSize = getAdSize();
         // Step 4 - Set the adaptive ad size on the ad view.
